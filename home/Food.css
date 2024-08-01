@@ -1,0 +1,348 @@
+*{
+   box-sizing:border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0%;
+    padding: 0%;
+    background-color: black;
+    color: white;  
+ }
+
+
+ .logo{
+   margin-left: 22px;
+  }
+  .logo h1{
+   position: absolute;
+   top: 8px;
+   font-size: 33px;
+   font-family: 'Courgette', cursive;
+   color: red;
+   border-bottom: 4px solid red;
+   border-bottom-right-radius: 22px;
+   letter-spacing: 2px;
+  }
+
+
+ nav{
+   display: flex;
+   justify-content: space-between;
+   background-color: black;
+   color: white;
+   padding: 10px;
+   box-shadow: 0px 4px 7px 4px rgb(24, 24, 24);
+   position: fixed;
+   width: 100%;
+   top: 0%;
+
+ } 
+ nav ul a{
+   text-decoration: none;
+   color: white;
+   margin-inline: 35px;
+   font-size: 25px;
+ }
+ nav ul{
+   margin-right: 50px;
+  }
+ nav ul a:hover{
+   color: red;
+ }
+nav button{
+   width: 80px;
+   height: 28px;
+   background-color: rgb(240, 4, 4);
+   color: white;
+   font-size: 18px;
+   border-radius: 2px;
+   border: none;
+}
+
+nav button:hover{
+   border: 2px solid red;
+   background-color: transparent;
+   transition: background-color 0.2s ease-in-out;
+   border-radius: 4px;
+   cursor: pointer;
+}
+
+
+nav input{
+   height: 28px;
+   width: 300px;
+   font-size: 18px;
+   margin-top: 20px;
+   margin-left: 375px;
+   border-radius: 4px;
+  }
+  
+
+.main{
+   display: flex;
+   justify-content: space-around;
+   margin-top: 130px;
+}
+.main .mainText h1{
+   font-size: 47px;
+}
+.mainText h2{
+   font-size: 40px;
+   color: rgb(60, 121, 252);
+}
+.mainText p{
+   color: silver;
+   font-size:20px;
+}
+.mainText button{
+   width: 130px;
+   height: 50px;
+   background-color: red;
+   color: white;
+   border-radius: 2px;
+   border: none;
+   font-size: 18px;
+}   
+.mainText button:hover{
+   border: 3px solid red;
+   background-color: transparent;
+   cursor: pointer;
+}
+.main img{
+   width: 38%; 
+}
+
+
+.head{
+   text-align: center;
+}
+.head span{
+   color: rgb(53, 151, 249);
+}
+.head1{
+   text-align: center;
+   margin-top: 150px;
+}
+.head1 span{
+   color: rgb(53, 151, 249);
+}
+
+
+.recipe-container{
+   display: grid;
+   text-align: center;
+   grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+   width: 80%;
+   grid-gap: 10px;
+   margin: 70px auto 100px auto;
+   place-items: center;
+}
+.recipe{
+   background-color: #fff;
+   color: black;
+   border-radius: 6px;
+   box-shadow: 0 5px 10px rgb(166, 62, 62);
+   display: flex;
+   flex-direction: column;
+   margin: 45px 15px 15px 15px;
+   max-width: 350px;
+   transition: transform 0.3s ease-in-out;
+}
+.recipe:hover{
+   transform: scale(1.05);
+}
+.recipe p{
+   margin-bottom: 2px;
+   margin-top: 2px;
+   font-size: 20px;
+}
+.recipe span{
+   font-weight: 600;
+}
+.recipe button{
+   font-size: 20px;
+   font-weight: 600;
+   padding: 10px;
+   border-radius: 5px;
+   border: none;
+   cursor: pointer;
+   margin: 18px auto;
+   background-color: red;
+   color: #fff;
+}
+.recipe-closeBtn{
+   padding: 5px;
+   border-radius: 8px;
+   background-color: #372121;
+   color: #fff;
+   position: absolute;
+   top: 10px;
+   right: 10px;
+}
+.recipe-details{
+   display: none;
+   padding: 15px;
+   position: fixed;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   background-color: rgb(210, 50, 18);
+   -webkit-transform: translate(-50%,-50%);
+   border-radius: 12px;
+   width: 80%;
+   height: 80%;
+   font-size: 20px;
+   transition: all 0.5s ease-in-out;
+   overflow-y: scroll;
+}
+/* Adding a scrollbar of my choice */
+.recipe-details::-webkit-scrollbar{
+   width: 10px;
+}
+.recipe-details::-webkit-scrollbar-thumb{
+   background: #db9898;
+   border-radius: 10px;
+   --webkit-border-radius: 15px;
+}
+.RecipeName{
+   text-align: center;
+   text-transform: uppercase;
+   text-decoration: underline;
+}
+.Instructions p{
+   line-height: 25px;
+   white-space: pre-line;
+}
+
+
+
+.card{
+   display: flex;
+   justify-content: center;
+   text-align: center;
+   margin-top: 30px;
+}
+.card .crd{
+   width: 300px;
+   margin-inline: 22px;
+   background-color: #fff;
+   color: black;
+}
+.foodText button{
+   width: 100px;
+   height: 30px;
+   background-color: red;
+   color: white;
+   border-radius: 2px;
+   border: none;
+   font-size: 14px;
+   cursor: pointer;
+}
+.crd .foodText{
+   padding: 22px;
+}
+.crd:hover{
+   background-color: rgb(101, 101, 101);
+   color: white;
+}
+.crd img{
+   width: 100%;
+}
+
+
+/*@media screen and (max-width:300px) {
+   nav{
+      flex-direction: column;
+   }
+}*/
+
+.best{
+   display: flex;
+   width: 800px;
+   background-color: #fff;
+   color: black;
+   margin-top: 33px;
+   margin-left: 20%;
+}
+.best img{
+   width: 44%;
+}
+.best .bestText{
+   padding: 22px;
+}
+.bestText{
+   text-align: center;
+}
+.bestText p{
+   margin-bottom: 20px;
+}
+.bestText a{
+   width: 130px;
+   padding: 8px;
+   background-color: red;
+   color: white;
+   text-decoration: none;
+   border-radius: 2px;
+   border: none;
+   font-size: 18px;
+}
+.bestText a:hover,.recipe button:hover,.recipe-closeBtn:hover{
+   background-color: transparent;
+   color: black;
+   cursor: pointer;
+   border: 2px solid red;
+   transition: background-color 0.2s ease-in-out;
+   border-radius: 4px;
+   cursor: pointer;
+}
+.bestText img{
+   border-radius: 50%;
+}
+
+.order{
+   display: flex;
+   justify-content: center;
+
+}
+.orderText i{
+   font-size: 187px;
+   color: red;
+
+}
+.orderText i:hover{
+   color: rgb(53, 158, 249);
+}
+.orderText button{
+   width: 130px;
+   height: 36px;
+   background-color: red;
+   color: white;
+   border-radius: 2px;
+   border: none;
+   font-size: 18px;
+}
+.orderText{
+   margin-inline: 100px;
+}
+
+.footer{
+   display: flex;
+   justify-content: space-around;
+   background-color: rgb(232, 230, 230);
+   color: black;
+   padding: 55px;
+   margin-top: 84px;
+}
+
+/* tracking */
+
+.tracking{
+   
+   display: flex;
+   justify-content: space-around;
+   margin-top: 175px;
+   display: none;
+}
+.tracking img{
+   width: 50%;
+}

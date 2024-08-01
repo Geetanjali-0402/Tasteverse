@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="Food.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Catamaran:wght@200&family=Courgette&family=Edu+TAS+Beginner:wght@700&family=Lato:wght@300;900&family=Mukta:wght@700&family=Mulish:wght@300&family=Open+Sans&family=PT+Sans:ital,wght@1,700&family=Poppins:wght@300&family=Raleway:wght@100&family=Roboto&family=Roboto+Condensed:wght@700&family=Roboto+Slab&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script
+      src="https://kit.fontawesome.com/f30fac2c61.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <div class="logo">
+          <h1><strong>TASTEVERSE</strong></h1>
+        </div>
+        <ul>
+          <a href="#main">Home</a>
+          <a id="foods" href="#food">Foods</a>
+          <a id="dishs" href="#dish">Best Dishes</a>
+          <a id="orders" href="#order">Contribute</a>
+          <button onclick="window.location.href='login.html'">Log In</button>
+          <form>
+            <input type="text"
+                   placeholder="Search for recipes..."
+                   class="searchBox"/>
+            <button type="submit" class="searchBtn">Search</button>
+          </form>
+        </ul>
+      </nav>
+
+      <div class="main" id="main">
+        <div class="mainText">
+          <h1>
+            Healthy Food For Wealthy <br />
+            Mood
+          </h1>
+          <h2>COOK, SHARE, REPEAT</h2>
+          <p>
+            A place where you get refernce to multiple recipes <br>
+            Engage with people by giving your reviews and also share your own innovative recipe
+          </p>
+          <button>Read More</button>
+        </div>
+        <img src="/images/mainimg.jpg" alt="" />
+      </div>
+
+      <section>
+        <div class="recipe-container" id="food">
+        </div>
+        <div class="recipe-details">
+          <button type="button" class="recipe-closeBtn">
+            <i class="fas fa-times"></i>
+          </button>
+          <div class="recipe-details-content"></div>
+        </div>
+      </section>
+
+      <!-- cards -->
+        <div class="foodcard" id="food">
+          <div class="head">
+            <h1><strong>OUR <span>FOODS</span></strong></h1>
+          </div>
+          <div class="card">
+            <div class="crd">
+              <img src="/images/img1.jpg" alt="" />
+              <div class="foodText">
+                <h2>Chicken 69</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing</p>
+                <button>Read More</button>
+              </div>
+            </div>
+            <div class="crd">
+              <img src="/images/img2.jpg" alt="" />
+              <div class="foodText">
+                <h2>Butter Paneer</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing</p>
+                <button>Read More</button>
+              </div>
+            </div>
+            <div class="crd">
+              <img src="/images/img3.jpg" alt="" />
+              <div class="foodText">
+                <h2>Pizza</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing</p>
+                <button>Read More</button>
+              </div>
+            </div>
+          </div>
+          
+
+          <div class="card">
+            <div class="crd">
+              <img src="/images/img4.jpg" alt="" />
+              <div class="foodText">
+                <h2>Samosa</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing</p>
+                <button>Read More</button>
+              </div>
+            </div>
+          <div class="crd">
+            <img src="/images/img5.jpg" alt="" />
+            <div class="foodText">
+              <h2>Burger</h2>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing</p>
+              <button>Read More</button>
+            </div>
+          </div>
+          <div class="crd">
+            <img src="/images/img6.jpg"">
+            <div class="foodText">
+              <h2>Fries</h2>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing</p>
+              <button>Read More</button>
+            </div>
+          </div>
+        </div>
+        </div>
+
+
+    
+    <!-- best dish -->
+
+    <div class="dish" id="dish">
+      <div class="head1">
+        <h1>Our Best <span>Dishes</span></h1>
+      </div>
+      <div class="best">
+        <img src="/images/mainimg.jpg" alt="" />
+        <div class="bestText">
+          <h2>Best Dishes Ever</h2>
+          <img src="/images/r2.jpg" alt="" />
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde,
+            obcaecati laborum.
+          </p>
+          <a href="https://www.chefspencil.com/best-30-food-blogs-in-2020/"
+            >Explore Foods</a
+          >
+        </div>
+      </div>
+
+      <div class="best">
+        <img src="/images/img3.jpg" alt="" />
+        <div class="bestText">
+          <h2>Best Dishes Ever</h2>
+          <img src="/images/r3.jpg" alt="" />
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde,
+            obcaecati laborum.
+          </p>
+          <a href="https://www.chefspencil.com/best-30-food-blogs-in-2020/"
+            >Explore Foods</a
+          >
+        </div>
+      </div>
+    </div>
+
+    
+
+    <div class="footer">
+      <div class="text">
+        <h2>About Us</h2>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing <br />
+          elit. Quos nihil aliquam fuga ex obcaecati rerum <br />
+          in sunt ducimus dolorum, officiis odit atque!
+        </p>
+      </div>
+      <div class="text">
+        <h2>Our Foods</h2>
+        <p>Quality</p>
+        <p>Service</p>
+      </div>
+      <div class="text">
+        <h2>Customer</h2>
+        <p>Service</p>
+        <p>Relation</p>
+        <p>Quality</p>
+        <p>More</p>
+      </div>
+      
+    </div>
+    <script src="recipe.js"></script>
+  </body>
+</html>
